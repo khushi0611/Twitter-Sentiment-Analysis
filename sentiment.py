@@ -82,7 +82,7 @@ class TwitterClient(object):
             
             return tweets
   
-        except tweepy.TweepyException as e:
+        except tweepy.error.Exceptions as e:
             
             print("Error : " + str(e))
   
